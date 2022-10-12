@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% include 'header.html' %}
+</head>
+
+<body>
+
+
+    {% include 'sidenav.html' %}
+
+
+    <div id="content-body-wrapper" class="content-move">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+</body>
+
+{% include 'scripts.html' %}
+
+</html>
